@@ -15,7 +15,9 @@
 body {
   font-family: "Poppins", sans-serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   overflow-x: hidden;
 }
 
@@ -221,4 +223,69 @@ nav .links > .nav-link:hover {
   background-image: url("/assets/triangle2.png");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.detalii {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--clr-purple);
+  color: white;
+}
+
+.detalii .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  transition: all 200ms ease-in;
+}
+
+.detalii .block:hover {
+  background-color: #2e1b574e;
+}
+
+.detalii .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  text-align: center;
+}
+
+.detalii .block h3 {
+  font-size: 1.25rem;
+}
+
+.detalii .block p {
+  font-size: 1rem;
+  width: 60%;
+  min-width: 220px;
+  font-weight: 300;
+}
+
+.detalii .block .icon {
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.detalii .block .icon-club {
+  background-image: url("/assets/location.png");
+}
+
+.detalii .block .icon-date {
+  background-image: url("/assets/calendar.png");
+}
+
+.detalii .block .icon-hour {
+  background-image: url("/assets/time.png");
 }
