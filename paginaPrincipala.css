@@ -323,5 +323,22 @@ nav .links > .nav-link:hover {
 
 .form_preselectii {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
+}
+
+.btn-preselectii {
+  font-size: 1rem;
+  width: 100px;
+  height: 3rem;
+  border-radius: 100px;
+  border: none;
+  background-color: var(--clr-purple);
+  color: white;
+  transition: all 250ms ease-in;
+}
+
+.btn-preselectii:hover {
+  background-color: #2e1b57;
 }
