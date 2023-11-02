@@ -329,6 +329,7 @@ nav .links > .nav-link:hover {
 }
 
 .btn-preselectii {
+  cursor: pointer;
   font-size: 1rem;
   width: 100px;
   height: 3rem;
