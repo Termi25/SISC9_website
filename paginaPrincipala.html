@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balul Bobocilor</title>
+    <link rel="stylesheet" href="paginaPrincipala.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#main" class="logos">
+        <div class="logo"></div>
+        <h1 class="logo_name">SK</h1>
+      </a>
+
+      <div class="links">
+        <a class="nav-link" href="#main">Acasă</a>
+        <a class="nav-link" href="#detalii">Locatie</a>
+        <a class="nav-link" href="#">Bilete</a>
+        <a class="nav-link" href="#detalii">Contact</a>
+      </div>
+    </nav>
+    <section id="main" class="main">
+      <div class="header">
+        <h1>Balul Bobocilor 2023</h1>
+        <p>
+          Te așteptăm la un bal FRESH alături de Puya. Nu rata ocazia și
+          cumpără-ți bilet!
+        </p>
+        <div class="btns">
+          <a class="btn bilet" href="#">Bilet</a>
+          <a class="btn loc" href="#detalii">Locatie</a>
+        </div>
+        <div class="social-media">
+          <a
+            href="https://www.facebook.com/profile.php?id=61552738870909"
+            class="fb"
+          ></a>
+          <a href="https://www.instagram.com/escape_09_sk/" class="ig"></a>
+        </div>
+      </div>
+      <div class="big-left-img">
+        <div class="puya_img"></div>
+        <div class="tr1"></div>
+        <div class="tr2"></div>
+      </div>
+    </section>
+
+    <section class="preselectii">
+      <h1>Înscriere preselecții</h1>
+      <form class="form_preselectii" action="preselectii.php" method="post">
+        <div class="cont">
+          <label for="nume">Nume</label>
+          <input id="nume" name="nume" type="text" />
+        </div>
+        <div class="cont">
+          <label for="prenume">Prenume</label>
+          <input id="prenume" name="prenume" type="text" />
+        </div>
+        <div class="cont">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" />
+        </div>
+        <input class="btn-preselectii" type="button" value="Înscriere" />
+      </form>
+    </section>
+
+    <section id="detalii" class="detalii">
+      <div class="club block">
+        <div class="icon icon-club"></div>
+        <div class="text">
+          <h3 class="header_txt">One Club</h3>
+          <p>Șos. Orhideelor, Nr. 1</p>
+        </div>
+      </div>
+      <div class="date block">
+        <div class="icon icon-date"></div>
+        <div class="text">
+          <h3 class="header_txt">25 NOIEMBRIE</h3>
+          <p>Sâmbătă</p>
+        </div>
+      </div>
+      <div class="hour block">
+        <div class="icon icon-hour"></div>
+        <div class="text">
+          <h3 class="header_txt">Ora 21:00</h3>
+          <p>Nu rata!</p>
+        </div>
+      </div>
+    </section>
+
+    <footer></footer>
+  </body>
+</html>

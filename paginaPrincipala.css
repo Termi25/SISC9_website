@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+:root {
+  --clr-purple: #472e7f;
+  --clr-blue: #00b3d3;
+  --clr-yellow: #fca311;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  display: flex;
+  position: absolute;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 10vh;
+}
+
+nav .logos {
+  display: flex;
+  gap: 0.75rem;
+}
+
+nav .logos .logo_name {
+  font-size: 2rem;
+}
+
+nav .logos .logo {
+  width: 50px;
+  height: 50px;
+  background-image: url("/assets/logo_echipa9.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+nav .links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav > .links > .nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 0.8rem;
+  padding: 0.3rem;
+  transition: all 250ms ease-in;
+}
+
+nav > .links > .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--clr-yellow);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+nav > .links > .nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+nav .links > .nav-link:hover {
+  color: var(--clr-yellow);
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 0 5rem;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  height: auto;
+  width: 40%;
+}
+
+.header .btns {
+  display: flex;
+  gap: 1rem;
+}
+
+.header p {
+  width: 80%;
+  font-size: 1.25rem;
+}
+
+.header h1 {
+  font-size: 3rem;
+  line-height: 55px;
+}
+
+.header .btns .bilet {
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  background-color: var(--clr-purple);
+  color: white;
+  transition: all 250ms ease-in;
+}
+
+.header .btns .bilet:hover {
+  background-color: #2e1b57;
+}
+
+.header .btns .loc {
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  border: 2px solid var(--clr-purple);
+  color: var(--clr-purple);
+  transition: all 250ms ease-in;
+}
+
+.header .btns .loc:hover {
+  color: var(--clr-purple);
+  background-color: #2e1b5715;
+}
+
+.main .social-media {
+  display: flex;
+  gap: 1rem;
+}
+
+.main .social-media > * {
+  width: 45px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.main .social-media .fb {
+  cursor: pointer;
+  background-image: url("/assets/facebook.png");
+  transition: all 200ms ease-in;
+}
+
+.main .social-media .fb:hover {
+  background-image: url("/assets/facebookH.png");
+}
+
+.main .social-media .ig {
+  cursor: pointer;
+  background-image: url("/assets/instagram.png");
+  transition: all 200ms ease-in;
+}
+
+.main .social-media .ig:hover {
+  background-image: url("/assets/instagram2.png");
+}
+
+.big-left-img {
+  z-index: -100;
+  position: relative;
+  width: 600px;
+  height: 100vh;
+}
+
+.big-left-img > .puya_img {
+  position: absolute;
+  left: 2rem;
+  bottom: 0;
+  width: 100%;
+  height: 460px;
+  background-image: url("/assets/puya.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.big-left-img > .tr1 {
+  rotate: 45deg;
+  z-index: -1000;
+  position: absolute;
+  top: 50vh;
+  left: -5vw;
+  width: 100%;
+  height: 450px;
+  background-image: url("/assets/triangle1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.big-left-img > .tr2 {
+  rotate: 30deg;
+  z-index: -1000;
+  position: absolute;
+  top: 20vh;
+  right: -20vw;
+  width: 100%;
+  height: 400px;
+  background-image: url("/assets/triangle2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.detalii {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--clr-purple);
+  color: white;
+}
+
+.detalii .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  transition: all 200ms ease-in;
+}
+
+.detalii .block:hover {
+  background-color: #2e1b574e;
+}
+
+.detalii .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  text-align: center;
+}
+
+.detalii .block h3 {
+  font-size: 1.25rem;
+}
+
+.detalii .block p {
+  font-size: 1rem;
+  width: 60%;
+  min-width: 220px;
+  font-weight: 300;
+}
+
+.detalii .block .icon {
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.detalii .block .icon-club {
+  background-image: url("/assets/location.png");
+}
+
+.detalii .block .icon-date {
+  background-image: url("/assets/calendar.png");
+}
+
+.detalii .block .icon-hour {
+  background-image: url("/assets/time.png");
+}
+
+.preselectii {
+  position: absolute;
+  bottom: -10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: max-content;
+  padding: 2rem;
+  height: max-content;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  border-radius: 20px;
+}
+
+.form_preselectii > .cont {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form_preselectii .cont > input {
+  height: 2rem;
+  width: 200px;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+
+.form_preselectii {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.btn-preselectii {
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100px;
+  height: 3rem;
+  border-radius: 100px;
+  border: none;
+  background-color: var(--clr-purple);
+  color: white;
+  transition: all 250ms ease-in;
+}
+
+.btn-preselectii:hover {
+  background-color: #2e1b57;
+}
