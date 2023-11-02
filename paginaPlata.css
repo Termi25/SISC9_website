@@ -21,7 +21,7 @@ body {
 .titluFormular {
   font-size: 2em;
   display: flex-box;
-  margin-left: 35vw;
+  margin-left: 25vw;
   align-items:center;
 }
 #logo {
@@ -40,9 +40,10 @@ body {
   position: relative;
   height: 100vh;
   width: 30vw;
-  background-image: url("/front-end/assets/jakob-rubner-tfneUyeXCXw-unsplash.jpg");
+  background-image: url("/assets/logo_echipa9.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 90%;
+  background-position: center;
 }
 
 .bg:after {
@@ -58,8 +59,8 @@ body {
   opacity: 0.3;
   background: linear-gradient(
     180deg,
-    rgba(136, 212, 152, 1) 0%,
-    rgba(26, 147, 111, 1) 100%
+    rgba(238, 74, 154, 1) 0%,
+    rgba(0, 181, 212, 1) 100%
   );
 }
 
@@ -75,7 +76,6 @@ body {
 
 .all-w-btn {
   display: flex;
-  flex-direction: column;
   height: auto;
   width: 100vw;
 }
@@ -84,7 +84,7 @@ body {
   text-decoration: none;
   width: max-content;
   color: white;
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 30px;
   color: var(--clr-light-green);
   transition: color 0.2s ease-in-out;
@@ -98,7 +98,8 @@ body {
 #meniuRegister {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
+  flex:1;
 }
 
 #meniuMax {
@@ -107,7 +108,7 @@ body {
   width: 100%;
   flex-direction: column;
   align-items: center;
-  gap: 4rem;
+  gap: 3rem;
   padding: 5rem 0;
 }
 .meniuMin {
@@ -142,16 +143,16 @@ body {
 }
 #RSubmit {
   color: white;
-  background-color: #1a936f;
-  border-color: #1a936f;
+  background-color: rgba(0, 181, 212, 1);
+  border-color: rgba(0, 181, 212, 1);
   padding: 0.5em 14em;
   border-radius: 2em;
   transition: all 0.3s ease-in-out;
 }
 #RSubmit:hover {
-  background-color: #f3e9d2;
-  border-color: #f3e9d2;
-  color: #191919;
+  background-color: #482D7F;
+  border-color: #482D7F;
+  color: white;
 }
 input {
   border: 0;
