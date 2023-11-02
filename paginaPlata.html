@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formular Plata</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plata SK</title>
+    <link rel="stylesheet" href="paginaPlata.css" />
+  </head>
+  <body>
+    <div id="connect" class="MainDiv">
+      <div class="bg"></div>
+      <div class="all-w-btn">
+        <a class="back-btn" href="">&#60 Back</a>
+        <div id="meniuMax">
+          <div class="meniuMin">
+            <div id="meniuRegister">
+              <p class="titluOptiune">Plata bilet SK</p>
+              <form id="RegisterSection">
+                    <div class="camp" id="RDivName">
+                        <label for="RName" class="inputText">Nume</label>
+                        <input type="text" id="RNameInput" name="RName" />
+                    </div>
+                    <div class="camp" id="RDivSurname">
+                        <label for="RSurname" class="RSurname">Prenume</label>
+                        <input type="text" id="RSurnameInput" name="RSurname" />
+                    </div>
+                    <div class="camp" id="RDivEmail">
+                        <label for="REmail" class="inputText">Email</label>
+                        <input type="email" id="REmailInput" name="REmail" />
+                    </div>
+                        <div class="camp" id="RDivTelefon">
+                        <label for="RTelefon" class="inputText">Telefon</label>
+                    <input type="tel" id="RTelefonInput" name="RTelefon" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="078-5564-4568" required/>
+                    </div>
+                    <div class="camp" id="RDivPlata">
+                        <label for="RPlata" class="inputText">Valoare plata</label>
+                        <input type="text" id="RPlataInput" name="RPlata" min="40" max="40" value="40 LEI" readonly/>
+                    </div>
+                  <input type="submit" id="RSubmit" value="Plateste" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="front.js"></script>
+  </body>
 </html>
